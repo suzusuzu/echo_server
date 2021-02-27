@@ -167,7 +167,6 @@ int main(int argc, char **argv) {
             .type = ACCEPT,
         };
         memcpy(&sqe->user_data, &conn_info, sizeof(conn_info));
-
       } else if (type == READ) {
         int n_byte = cqe->res;
         if (cqe->res <= 0) {  // connection closed by client
