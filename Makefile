@@ -20,5 +20,8 @@ epoll_echo: epoll_echo.c
 io_uring_echo: io_uring_echo.c
 	$(CC) $(CFLAGS) -o io_uring_echo io_uring_echo.c -luring
 
+test: all
+	./test.sh
+
 clean:
 	rm -f fork_echo select_echo poll_echo epoll_echo io_uring_echo
