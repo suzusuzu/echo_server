@@ -1,6 +1,6 @@
 # echo_server
 
-This is a repository that implements echo server in various ways.
+This is a repository that implements echo server in various ways such as fork and select, poll, epoll, io_uring.
 
 ## build
 
